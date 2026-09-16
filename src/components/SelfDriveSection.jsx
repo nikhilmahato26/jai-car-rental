@@ -1,5 +1,4 @@
-import React from 'react';
-import { Key, Shield, Sparkles, Fuel, Gauge, CheckCircle, Phone, ArrowRight, MessageCircle } from 'lucide-react';
+import { Key, Shield, Sparkles, Fuel, Gauge, CheckCircle, Phone, ArrowRight, MessageCircle, Camera } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/carData';
 
 export default function SelfDriveSection() {
@@ -34,11 +33,11 @@ export default function SelfDriveSection() {
           <div className="featured-car-card">
             <div className="featured-car-img-box">
               <img
-                src="/images/swift.jpg"
-                alt="Swift Automatic ZXi Petrol"
+                src="/images/real-cars/swift-front.jpg"
+                alt="Swift Automatic ZXi Petrol MH14 MF 8712"
                 className="featured-car-img"
               />
-              <span className="featured-tag">★ Featured Self-Drive</span>
+              <span className="featured-tag">★ Actual Car • MH14 MF 8712</span>
             </div>
 
             <div className="featured-car-content">
@@ -112,11 +111,11 @@ export default function SelfDriveSection() {
           <div className="featured-car-card">
             <div className="featured-car-img-box">
               <img
-                src="/images/fronx.jpg"
-                alt="Fronx CNG"
+                src="/images/real-cars/fronx-front.jpg"
+                alt="Fronx CNG MH12 XQ 6698"
                 className="featured-car-img"
               />
-              <span className="featured-tag">★ Featured Self-Drive</span>
+              <span className="featured-tag">★ Actual Car • MH12 XQ 6698</span>
             </div>
 
             <div className="featured-car-content">
@@ -185,6 +184,27 @@ export default function SelfDriveSection() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Real Fleet Photos Teaser CTA */}
+        <div style={{ textAlign: 'center', marginTop: '2.5rem', marginBottom: '2rem' }}>
+          <a
+            href="#real-fleet"
+            className="btn btn-secondary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.6rem',
+              borderRadius: 'var(--radius-full)',
+              padding: '0.85rem 1.8rem',
+              borderColor: 'var(--yellow-bright)',
+              background: 'rgba(255, 196, 0, 0.08)',
+              color: 'var(--text-pure)'
+            }}
+          >
+            <Camera size={18} style={{ color: 'var(--yellow-bright)' }} />
+            <span style={{ fontWeight: '700' }}>Want to see all genuine yard photos? Explore Real Fleet Gallery (7 Photos) &darr;</span>
+          </a>
         </div>
 
         {/* Highlight Bullets */}

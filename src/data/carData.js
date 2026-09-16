@@ -359,3 +359,112 @@ export const FAQS = [
     answer: "Yes, spacious MUVs like Innova Crysta and Tempo Travellers are available for family and group travel, subject to availability."
   }
 ];
+
+export const REAL_FLEET_GALLERY = [
+  {
+    id: "real-swift-front",
+    title: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT Petrol",
+    registration: "MH14 MF 8712",
+    category: "swift",
+    categoryLabel: "Maruti Swift",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    image: "/images/real-cars/swift-front.jpg",
+    alt: "Actual Maruti Suzuki Swift Automatic front angle at JAI CAR RENTAL Wagholi Pune",
+    caption: "Front 3/4 Profile • Sparkling Pearl White finish with crystal projector headlamps & bold black grille",
+    tags: ["Automatic", "Push-Start", "Alloy Wheels", "AC Chilled"],
+    badge: "Actual Car Photo"
+  },
+  {
+    id: "real-swift-rear-sky",
+    title: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT Petrol",
+    registration: "MH14 MF 8712",
+    category: "swift",
+    categoryLabel: "Maruti Swift",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    image: "/images/real-cars/swift-rear-sky.jpg",
+    alt: "Real Maruti Swift rear dynamic view under Pune skies",
+    caption: "Rear 3/4 Dynamic Angle • Clean sporty spoiler, precision diamond-cut alloys & tinted glass",
+    tags: ["Rear Wiper", "Defogger", "High Mileage", "Smooth Ride"],
+    badge: "Actual Car Photo"
+  },
+  {
+    id: "real-interior-dashboard",
+    title: "Cockpit & Touchscreen Interior",
+    model: "Spotless Sanitized Cabin",
+    registration: "Verified Cabin",
+    category: "interior",
+    categoryLabel: "Cabin & Interior",
+    fuel: "Dual Airbags",
+    transmission: "Audio Controls",
+    image: "/images/real-cars/interior-dashboard.jpg",
+    alt: "Real cockpit interior dashboard view of JAI CAR RENTAL vehicle",
+    caption: "Cabin View • SmartPlay touchscreen infotainment, dual-tone leatherette steering & deep-sanitized upholstery",
+    tags: ["Touchscreen Display", "Bluetooth Audio", "Push Button Start", "100% Sanitized"],
+    badge: "Verified Interior"
+  },
+  {
+    id: "real-fronx-front",
+    title: "Maruti Suzuki Fronx",
+    model: "Fronx Crossover / SUV",
+    registration: "MH12 XQ 6698",
+    category: "fronx",
+    categoryLabel: "Maruti Fronx",
+    fuel: "CNG / Petrol",
+    transmission: "Manual",
+    image: "/images/real-cars/fronx-front.jpg",
+    alt: "Real Maruti Suzuki Fronx front fascia at JAI CAR RENTAL yard Wagholi",
+    caption: "Front Fascia • Bold NEXA geometric grille, split LED DRLs & muscular SUV road stance",
+    tags: ["CNG Eco Fuel", "High Clearance", "Dual Airbags", "5-Seater"],
+    badge: "Actual Car Photo"
+  },
+  {
+    id: "real-fronx-side",
+    title: "Maruti Suzuki Fronx",
+    model: "Fronx Crossover / SUV",
+    registration: "MH12 XQ 6698",
+    category: "fronx",
+    categoryLabel: "Maruti Fronx",
+    fuel: "CNG / Petrol",
+    transmission: "Manual",
+    image: "/images/real-cars/fronx-side.jpg",
+    alt: "Real Maruti Suzuki Fronx full side profile and ground clearance",
+    caption: "Side Profile • High ground clearance, wheel arch protective cladding & aerodynamic coupe roofline",
+    tags: ["Roof Rails", "Highway Stance", "Huge Boot", "Great Mileage"],
+    badge: "Actual Car Photo"
+  },
+  {
+    id: "real-swift-front-wide",
+    title: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT Petrol",
+    registration: "MH14 MF 8712",
+    category: "swift",
+    categoryLabel: "Maruti Swift",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    image: "/images/real-cars/swift-front-wide.jpg",
+    alt: "Real Maruti Suzuki Swift parked at JAI CAR RENTAL Wagholi yard",
+    caption: "Wagholi Yard View • Fully serviced, washed, tyre pressure verified and ready for instant key handover",
+    tags: ["Instant Handover", "Low Deposit", "Doorstep Delivery", "Verified Docs"],
+    badge: "Actual Car Photo"
+  },
+  {
+    id: "real-swift-rear",
+    title: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT Petrol",
+    registration: "MH14 MF 8712",
+    category: "swift",
+    categoryLabel: "Maruti Swift",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    image: "/images/real-cars/swift-rear.jpg",
+    alt: "Real Maruti Swift rear profile view at JAI CAR RENTAL",
+    caption: "Rear Quarter Angle • Clean tail lamp clusters, immaculate paintwork and generous luggage boot",
+    tags: ["Spacious Boot", "Reverse Sensors", "Spotless Condition", "Keyless Entry"],
+    badge: "Actual Car Photo"
+  }
+];
+

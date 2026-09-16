@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import VehicleCategories from './components/VehicleCategories';
 import SelfDriveSection from './components/SelfDriveSection';
+import RealFleetGallery from './components/RealFleetGallery';
 import DriverRentalSection from './components/DriverRentalSection';
 import CoreServices from './components/CoreServices';
 import FleetSection from './components/FleetSection';
@@ -37,6 +38,9 @@ export default function App() {
 
       {/* Featured Self-Drive Section with Swift & Fronx */}
       <SelfDriveSection />
+
+      {/* Genuine Ground Fleet: Unedited WhatsApp Real Car Photos */}
+      <RealFleetGallery />
 
       {/* Rental With Chauffeur Driver Section */}
       <DriverRentalSection />

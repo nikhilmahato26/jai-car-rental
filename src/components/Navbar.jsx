@@ -16,8 +16,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Home', href: '#hero' },
-    { label: 'About', href: '#about' },
     { label: 'Fleet', href: '#fleet' },
+    { label: 'Real Fleet 📸', href: '#real-fleet' },
     { label: 'Self Drive', href: '#self-drive' },
     { label: 'Services', href: '#services' },
     { label: 'Airport Transfer', href: '#airport-transfers' },
