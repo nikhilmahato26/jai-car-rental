@@ -501,4 +501,453 @@ export const REAL_FLEET_GALLERY = REAL_FLEET_VEHICLES.flatMap(vehicle =>
   }))
 );
 
+// Comprehensive Car Details for Dedicated Vehicle Pages
+export const DETAILED_CARS_DATA = {
+  "swift-automatic-mh14": {
+    id: "swift-automatic-mh14",
+    aliasIds: ["swift-auto", "swift", "real-swift-front"],
+    name: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT Petrol",
+    registration: "MH14 MF 8712",
+    category: "Hatchback",
+    badge: "100% Genuine Fleet • Verified Self-Drive & Driver",
+    typeBadge: "Self-Drive & Chauffeur",
+    fuel: "Petrol (High Mileage)",
+    transmission: "Automatic AMT",
+    seats: "5 Seater",
+    engine: "1.2L DualJet Petrol",
+    mileage: "22.56 kmpl",
+    bootSpace: "268 Litres",
+    groundClearance: "163 mm",
+    rating: 4.9,
+    tripsCount: 148,
+    highlight: "Effortless Automatic City & Highway Drive",
+    description: "The Maruti Suzuki Swift Automatic ZXi is our most sought-after self-drive and city rental hatchback. Featuring an ultra-responsive AMT gearbox, top-trim Pearl White exterior, diamond-cut alloy wheels, push-button start, and chilled automatic climate control. Mechanically inspected, sanitised, and ready for instant key handover at our Wagholi Pune hub or doorstep delivery across Pune and PCMC.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "12 Hours", detail: "Ideal for local city errands, meetings & shopping" },
+        { label: "24 Hours / Daily", detail: "Full day freedom with flexible pickup & drop" },
+        { label: "Weekend Getaway", detail: "Perfect for Lonavala, Mahabaleshwar & Lavasa" },
+        { label: "Weekly & Monthly", detail: "Discounted long-term corporate & personal packages" }
+      ],
+      deposit: "Refundable Security Deposit Applicable",
+      fuelPolicy: "Same-to-Same Fuel Policy (Fair & Transparent)",
+      kilometers: "Flexible km plans available with transparent extra km rates"
+    },
+    slides: [
+      {
+        id: "swift-front",
+        label: "Front 3/4 View",
+        title: "Front 3/4 Profile",
+        image: "/images/real-cars/swift-front.jpg",
+        alt: "Maruti Suzuki Swift Automatic front angle MH14 MF 8712",
+        caption: "Front 3/4 Profile • Sparkling Pearl White finish with crystal projector headlamps & bold black grille",
+        tag: "Front 3/4 View"
+      },
+      {
+        id: "swift-side-wide",
+        label: "Side & Stance",
+        title: "Wagholi Yard Full Stance",
+        image: "/images/real-cars/swift-front-wide.jpg",
+        alt: "Maruti Suzuki Swift yard view at Wagholi Pune hub",
+        caption: "Yard Stance & Side Angle • Clean body lines, calibrated tyre pressure, fully washed and ready for handover",
+        tag: "Side & Stance"
+      },
+      {
+        id: "swift-rear-sky",
+        label: "Rear Angle",
+        title: "Rear 3/4 Dynamic Angle",
+        image: "/images/real-cars/swift-rear-sky.jpg",
+        alt: "Maruti Suzuki Swift rear dynamic angle MH14 MF 8712",
+        caption: "Rear 3/4 Dynamic Angle • Clean sporty spoiler, precision diamond-cut alloys & tinted privacy glass",
+        tag: "Rear 3/4 View"
+      },
+      {
+        id: "swift-rear",
+        label: "Boot Space",
+        title: "Rear Boot & Sensors",
+        image: "/images/real-cars/swift-rear.jpg",
+        alt: "Maruti Suzuki Swift rear tailgate and boot",
+        caption: "Rear Tailgate & Boot • Clean tail lamps, reverse parking sensors and generous luggage compartment",
+        tag: "Rear & Boot"
+      },
+      {
+        id: "swift-interior",
+        label: "Interior Cabin",
+        title: "Touchscreen & Cockpit",
+        image: "/images/real-cars/interior-dashboard.jpg",
+        alt: "Maruti Suzuki Swift cockpit and touchscreen display",
+        caption: "Cabin View • SmartPlay touchscreen infotainment, leatherette steering controls & deep-sanitized upholstery",
+        tag: "Cockpit & Cabin"
+      }
+    ],
+    features: [
+      "Automatic AMT Gearbox (Effortless in Pune traffic)",
+      "Push Button Start / Stop with Keyless Entry",
+      "SmartPlay Touchscreen Infotainment with Apple CarPlay / Android Auto",
+      "Chilled Automatic Climate Control AC",
+      "Precision Diamond-Cut Alloy Wheels",
+      "Reverse Parking Assist Sensors",
+      "Dual Airbags + ABS + EBD for complete safety",
+      "Pune RTO Compliant (MH-14 Registered)"
+    ],
+    handoverHub: "Wagholi Green, Phase 2, Pune (Doorstep delivery available)"
+  },
+  "fronx-cng-mh12": {
+    id: "fronx-cng-mh12",
+    aliasIds: ["fronx-cng", "fronx", "real-fronx-front"],
+    name: "Maruti Suzuki Fronx SUV",
+    model: "Fronx Crossover / Coupe SUV (CNG)",
+    registration: "MH12 XQ 6698",
+    category: "Crossover / SUV",
+    badge: "100% Genuine Fleet • Verified Eco & Fuel Efficient",
+    typeBadge: "Self-Drive & Chauffeur",
+    fuel: "CNG + Petrol (Dual Fuel)",
+    transmission: "5-Speed Manual",
+    seats: "5 Seater",
+    engine: "1.2L K-Series DualJet Dual-Fuel",
+    mileage: "28.51 km/kg (CNG)",
+    bootSpace: "308 Litres (Accommodates luggage with cylinder)",
+    groundClearance: "190 mm (SUV Stance)",
+    rating: 4.95,
+    tripsCount: 162,
+    highlight: "High SUV Ground Clearance with Unmatched CNG Economy",
+    description: "The Maruti Suzuki Fronx is a head-turning coupe crossover SUV engineered for high ground clearance and maximum fuel economy. Powered by factory-fitted CNG dual-fuel technology, it slashes travel costs while maintaining SUV road presence. Features split LED DRLs, NEXA wave grille, protective wheel cladding, spacious 5-passenger interior, and elevated highway visibility.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "12 Hours", detail: "Super economical for Pune local and business commutes" },
+        { label: "24 Hours / Daily", detail: "Full day SUV exploration with minimal fuel expense" },
+        { label: "Outstation Trips", detail: "Huge fuel savings on Mumbai, Nashik, Kolhapur & Shirdi trips" },
+        { label: "Weekly & Monthly", detail: "Ideal for long-term project stays and corporate executives" }
+      ],
+      deposit: "Refundable Security Deposit Applicable",
+      fuelPolicy: "Same-to-Same Fuel Policy (Fair & Transparent)",
+      kilometers: "Customizable kilometer packages to match your trip"
+    },
+    slides: [
+      {
+        id: "fronx-front",
+        label: "Front Fascia",
+        title: "Bold Front NEXA Fascia",
+        image: "/images/real-cars/fronx-front.jpg",
+        alt: "Maruti Suzuki Fronx front fascia MH12 XQ 6698",
+        caption: "Front Fascia • Bold NEXA geometric wave grille, split LED DRLs & muscular SUV road stance",
+        tag: "Front View"
+      },
+      {
+        id: "fronx-side",
+        label: "Side Profile",
+        title: "Side Profile & Ground Clearance",
+        image: "/images/real-cars/fronx-side.jpg",
+        alt: "Maruti Suzuki Fronx full side profile and wheel arches",
+        caption: "Side Profile • High ground clearance, wheel arch protective cladding & aerodynamic coupe roofline",
+        tag: "Side Profile"
+      },
+      {
+        id: "fronx-interior",
+        label: "Interior Cabin",
+        title: "Modern Cockpit & Dashboard",
+        image: "/images/real-cars/interior-dashboard.jpg",
+        alt: "Maruti Fronx modern cockpit dashboard and infotainment",
+        caption: "Cabin View • Deep-sanitized 5-seater cabin, high-visibility commanding driving position & Bluetooth audio",
+        tag: "Cockpit & Cabin"
+      }
+    ],
+    features: [
+      "Factory-Fitted CNG Dual Fuel (Highest Fuel Economy)",
+      "Commanding 190mm SUV Ground Clearance (Handles rough roads)",
+      "Striking Aerodynamic Coupe SUV Styling",
+      "Split LED Daytime Running Lights (DRLs)",
+      "Spacious Legroom & Deep-Cleaned 5-Seater Cabin",
+      "Dual Front Airbags + ABS + EBD Brake Assist",
+      "Roof Rails & Wheel Arch Cladding",
+      "Pune RTO Compliant (MH-12 Registered)"
+    ],
+    handoverHub: "Wagholi Green, Phase 2, Pune (Doorstep delivery available)"
+  },
+  "fortuner": {
+    id: "fortuner",
+    aliasIds: [],
+    name: "Toyota Fortuner 4x2 / 4x4",
+    model: "Fortuner Luxury SUV",
+    registration: "Pune RTO Registered",
+    category: "Premium SUV",
+    badge: "VIP Class • Chauffeur & Self-Drive",
+    typeBadge: "VIP & Chauffeur",
+    fuel: "Diesel",
+    transmission: "Automatic / Manual",
+    seats: "7 Seater",
+    engine: "2.8L Turbo Diesel",
+    mileage: "14.2 kmpl",
+    bootSpace: "296 Litres (Expandable)",
+    groundClearance: "225 mm",
+    rating: 5.0,
+    tripsCount: 210,
+    highlight: "Commanding Stance, VIP Luxury & Supreme Road Presence",
+    description: "The Toyota Fortuner is the undisputed king of Indian roads. Unrivalled road presence, elevated seating, powerful diesel performance, and opulent 7-seater comfort make it the top choice for VIP delegations, wedding baraats, corporate events, and grand family tours across Maharashtra.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "Local 8hr / 80km", detail: "Executive city travel & corporate VIP transport" },
+        { label: "Outstation Per Km", detail: "Long distance luxury journeys with verified chauffeur" },
+        { label: "Wedding Day Package", detail: "Adorned with decorations for baraat & groom entry" },
+        { label: "Corporate Shuttles", detail: "Dedicated chauffeur with high security and punctuality" }
+      ],
+      deposit: "Terms applicable per rental format",
+      fuelPolicy: "Transparent billing & driver allowance",
+      kilometers: "Standard outstation daily limit 250/300 km"
+    },
+    slides: [
+      {
+        id: "fortuner-main",
+        label: "Front & Stance",
+        title: "Toyota Fortuner Commanding Stance",
+        image: "/images/fortuner.jpg",
+        alt: "Toyota Fortuner Luxury SUV at JAI CAR RENTAL",
+        caption: "Commanding Stance • Bold chrome grille, high approach angle & executive leather cabin",
+        tag: "Premium SUV"
+      }
+    ],
+    features: [
+      "High Authority & VIP Road Presence",
+      "Plush 7-Passenger Leather Seating",
+      "Dual Zone Climate Control with Rear AC Vents",
+      "Chauffeur-Driven by Experienced Uniformed Drivers",
+      "Impeccable Mechanical Condition & Deep Sanitisation",
+      "Suitable for Weddings, VIPs & Long-Distance Highway Cruises"
+    ],
+    handoverHub: "Wagholi Hub & Doorstep Delivery Across Pune"
+  },
+  "innova-crysta": {
+    id: "innova-crysta",
+    aliasIds: [],
+    name: "Toyota Innova Crysta",
+    model: "Innova Crysta 2.4 VX/ZX",
+    registration: "Pune RTO Registered",
+    category: "Premium Family MPV",
+    badge: "Gold Standard Family & Outstation Travel",
+    typeBadge: "Chauffeur & Self-Drive",
+    fuel: "Diesel",
+    transmission: "Manual / Automatic",
+    seats: "7 to 8 Seater",
+    engine: "2.4L GD Turbo Diesel",
+    mileage: "15.1 kmpl",
+    bootSpace: "300 Litres (With 3rd Row Folded)",
+    groundClearance: "178 mm",
+    rating: 4.98,
+    tripsCount: 340,
+    highlight: "Gold Standard Comfort for Outstation & Airport Trips",
+    description: "The Toyota Innova Crysta is India's most beloved premium MPV for family pilgrimages, outstation tours, and corporate airport shuttles. Offers captain seat comfort, whisper-quiet cabin insulation, ample luggage space, and peerless highway stability for rides to Shirdi, Mahabaleshwar, Goa, and Mumbai.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "Local 8hr / 80km", detail: "City family tours, shopping & corporate visits" },
+        { label: "Airport Drop / Pickup", detail: "Punctual Pune & Mumbai international airport transfers" },
+        { label: "Outstation Tours", detail: "Comfortable long journeys with experienced drivers" },
+        { label: "Multi-Day Packages", detail: "Ashtavinayak, Shirdi, Konkan & Mahabaleshwar tours" }
+      ],
+      deposit: "Customizable based on trip requirements",
+      fuelPolicy: "Transparent fuel & toll policy",
+      kilometers: "Per-km or package billing available"
+    },
+    slides: [
+      {
+        id: "innova-main",
+        label: "Front & Stance",
+        title: "Toyota Innova Crysta Premium MPV",
+        image: "/images/innova.jpg",
+        alt: "Toyota Innova Crysta at JAI CAR RENTAL",
+        caption: "Gold Standard Comfort • Captain seats, rear AC blowers and supreme highway ride quality",
+        tag: "Family MPV"
+      }
+    ],
+    features: [
+      "Ultra-Comfortable Captain Seats with Ample Legroom",
+      "Dedicated Rear AC Airflow for All Rows",
+      "Huge Luggage Space for Family Suitcases",
+      "Punctual, Courteous & Route-Savvy Chauffeurs",
+      "Pristine Cleanliness & Sanitised Interiors"
+    ],
+    handoverHub: "Wagholi Hub & Doorstep Delivery Across Pune"
+  },
+  "tempo-traveller": {
+    id: "tempo-traveller",
+    aliasIds: [],
+    name: "Force Tempo Traveller (12 to 17 Seater)",
+    model: "Tempo Traveller Executive",
+    registration: "Commercial Registered",
+    category: "Tempo Traveller / Group",
+    badge: "Group & Corporate Travel Specialist",
+    typeBadge: "Chauffeur Driven",
+    fuel: "Diesel",
+    transmission: "Manual",
+    seats: "12 to 17 Seater",
+    engine: "FM 2.6 CR ED Diesel",
+    mileage: "11 kmpl",
+    bootSpace: "Dedicated Rear Luggage Carrier",
+    groundClearance: "200 mm",
+    rating: 4.92,
+    tripsCount: 185,
+    highlight: "Ideal for 12 to 17 Passengers, Family Tours & Corporate Shuttles",
+    description: "The Force Tempo Traveller is the ultimate group transport solution for large family gatherings, corporate offsites, wedding guest transfers, and tourist tours across Maharashtra. Equipped with pushback seats, individual AC vents, wide aisles, and generous roof luggage carriers.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "Corporate Day Shuttle", detail: "Employee transit & conference transfers" },
+        { label: "Wedding Delegation", detail: "Baraat transport and guest pickup from airports/stations" },
+        { label: "Outstation Group Tour", detail: "Shirdi, Mahabaleshwar, Goa, Lonavala group getaways" }
+      ],
+      deposit: "Advance booking reservation",
+      fuelPolicy: "All-inclusive or per-km rates with driver",
+      kilometers: "Daily minimum outstation limit applicable"
+    },
+    slides: [
+      {
+        id: "traveller-main",
+        label: "Front & Stance",
+        title: "Force Tempo Traveller Group Vehicle",
+        image: "/images/traveller.jpg",
+        alt: "Tempo Traveller at JAI CAR RENTAL",
+        caption: "Group Travel • Pushback luxury reclining seats, individual AC vents & high ceiling",
+        tag: "Group Travel"
+      }
+    ],
+    features: [
+      "12 to 17 Reclining Pushback Seats",
+      "High Roof Cabin with Wide Center Aisle",
+      "Powerful Centralised Dual AC System",
+      "Experienced Highway Drivers with Impeccable Safety Record",
+      "Spacious Luggage Boot & Heavy Duty Carrier"
+    ],
+    handoverHub: "Wagholi Hub & Doorstep Pickup Across Pune"
+  },
+  "executive-sedan": {
+    id: "executive-sedan",
+    aliasIds: ["sedan"],
+    name: "Executive Sedan",
+    model: "Dzire / Ciaz / Honda City Class",
+    registration: "Pune RTO Registered",
+    category: "Sedan",
+    badge: "Corporate & Airport Transfer Specialist",
+    typeBadge: "With Driver & Self-Drive",
+    fuel: "Petrol / Diesel",
+    transmission: "Manual / Automatic",
+    seats: "5 Seater",
+    engine: "1.5L Efficient Petrol/Diesel",
+    mileage: "20.5 kmpl",
+    bootSpace: "510 Litres (Large Boot)",
+    groundClearance: "165 mm",
+    rating: 4.9,
+    tripsCount: 220,
+    highlight: "Smooth, Elegant & Spacious Executive Comfort",
+    description: "Our executive sedan fleet provides a plush, relaxed ride for corporate executives, client pick-and-drop, airport transfers, and sophisticated city commutes. Features wide legroom, refined suspension, large 510-litre boot for international travel suitcases, and whisper-soft cabin acoustics.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "Airport Drop / Pickup", detail: "Fixed transparent tariff with guaranteed on-time arrival" },
+        { label: "Corporate Day Rental", detail: "8hr/80km full day executive mobility in Pune" },
+        { label: "City & Intercity", detail: "Pune-Mumbai Expressway or local executive transport" }
+      ],
+      deposit: "Applicable per rental format",
+      fuelPolicy: "Same-to-same or all-inclusive chauffeur tariff",
+      kilometers: "Transparent billing with zero surprise fees"
+    },
+    slides: [
+      {
+        id: "sedan-main",
+        label: "Front & Stance",
+        title: "Executive Sedan Smooth & Elegant",
+        image: "/images/sedan.jpg",
+        alt: "Executive Sedan at JAI CAR RENTAL",
+        caption: "Executive Comfort • Ample legroom, huge 510L luggage boot and whisper-quiet suspension",
+        tag: "Executive Sedan"
+      }
+    ],
+    features: [
+      "Massive 510-Litre Boot Capacity for Airport Luggage",
+      "Soft Cushioned Rear Seats with Center Armrest",
+      "Chilled Dual-Zone Climate AC",
+      "Suitably Dressed Punctual Drivers",
+      "Smooth Highway Cruising on Pune-Mumbai Expressway"
+    ],
+    handoverHub: "Wagholi Hub & Doorstep Pickup Across Pune"
+  },
+  "wedding-luxury": {
+    id: "wedding-luxury",
+    aliasIds: ["luxury"],
+    name: "Luxury Wedding & Event Car",
+    model: "Mercedes-Benz / BMW Luxury Class",
+    registration: "VIP Registered",
+    category: "Luxury",
+    badge: "VIP & Grand Celebrations",
+    typeBadge: "Chauffeur Driven",
+    fuel: "Petrol / Diesel",
+    transmission: "Automatic",
+    seats: "5 Seater",
+    engine: "2.0L Turbo Luxury Class",
+    mileage: "12-14 kmpl",
+    bootSpace: "480 Litres",
+    groundClearance: "160 mm",
+    rating: 5.0,
+    tripsCount: 95,
+    highlight: "Turn Heads with Grand Entrances & VIP Styling",
+    description: "Make your wedding day or milestone event unforgettable with our decorated luxury cars. We provide premium luxury vehicles (Mercedes-Benz, BMW, Fortuner) adorned with elegant floral decor for groom and bridal grand entries, VIP guest delegations, photo & video shoots, and high-profile corporate galas.",
+    pricing: {
+      rate: "Price on Enquiry",
+      periods: [
+        { label: "Wedding Day Full Package", detail: "Includes floral styling, chauffeur and waiting time" },
+        { label: "Baraat Groom Entry", detail: "Grand entrance with slow roll coordination" },
+        { label: "VIP Event / Photoshoot", detail: "Prestigious backdrop for pre-wedding and corporate shoots" }
+      ],
+      deposit: "Advance reservation required",
+      fuelPolicy: "All-inclusive event packages",
+      kilometers: "Customized event hours & distance packages"
+    },
+    slides: [
+      {
+        id: "luxury-main",
+        label: "Front & Stance",
+        title: "Luxury Wedding & Event Car",
+        image: "/images/wedding_luxury.jpg",
+        alt: "Luxury Wedding Car at JAI CAR RENTAL",
+        caption: "VIP Luxury • Floral adornment ready, leather massage seats and unmatched celebration grandeur",
+        tag: "Wedding & VIP"
+      }
+    ],
+    features: [
+      "Grand Entrance Stance & High Prestige Styling",
+      "Customised Floral Decoration Coordination Available",
+      "Uniformed, Well-Spoken, Highly Professional Chauffeurs",
+      "Spotless Interior & Exterior Detailing Prior to Handover",
+      "Flexible Timing to Match Wedding Muhurat Schedules"
+    ],
+    handoverHub: "Wagholi Hub & Doorstep Handover Across Pune"
+  }
+};
+
+export const getCarById = (id) => {
+  if (!id) return DETAILED_CARS_DATA["swift-automatic-mh14"];
+  const cleanId = id.toLowerCase().trim();
+  if (DETAILED_CARS_DATA[cleanId]) return DETAILED_CARS_DATA[cleanId];
+  
+  // Search aliases
+  for (const car of Object.values(DETAILED_CARS_DATA)) {
+    if (car.aliasIds && car.aliasIds.includes(cleanId)) {
+      return car;
+    }
+  }
+
+  // Partial match fallback
+  for (const [key, car] of Object.entries(DETAILED_CARS_DATA)) {
+    if (key.includes(cleanId) || cleanId.includes(key)) {
+      return car;
+    }
+  }
+
+  return DETAILED_CARS_DATA["swift-automatic-mh14"];
+};
+
+
 

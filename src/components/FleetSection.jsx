@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Phone, ArrowUpRight, Check, Sparkles } from 'lucide-react';
+import { MessageCircle, Phone, ArrowUpRight, Check, Sparkles, ArrowRight } from 'lucide-react';
 import { FLEET_DATA, BUSINESS_INFO } from '../data/carData';
 
 export default function FleetSection() {
@@ -106,23 +106,25 @@ export default function FleetSection() {
                 </div>
 
                 {/* Action Buttons */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '0.6rem' }}>
+                  <a
+                    href={`#/car/${car.id === 'swift-auto' ? 'swift-automatic-mh14' : car.id === 'fronx-cng' ? 'fronx-cng-mh12' : car.id}`}
+                    className="btn btn-secondary btn-sm"
+                    style={{ justifyContent: 'center' }}
+                  >
+                    <span>View Details</span>
+                    <ArrowRight size={14} />
+                  </a>
+
                   <a
                     href={`https://wa.me/91${BUSINESS_INFO.whatsappNumber}?text=Hello%20JAI%20CAR%20RENTAL,%20I%20would%20like%20to%20enquire%20about%20${encodeURIComponent(car.name)}.`}
                     target="_blank"
                     rel="noreferrer"
                     className="btn btn-primary btn-sm"
+                    style={{ justifyContent: 'center' }}
                   >
-                    <MessageCircle size={15} />
+                    <MessageCircle size={14} />
                     <span>Enquire</span>
-                  </a>
-
-                  <a
-                    href={`tel:${BUSINESS_INFO.phonePrimary}`}
-                    className="btn btn-secondary btn-sm"
-                  >
-                    <Phone size={15} />
-                    <span>Call Now</span>
                   </a>
                 </div>
               </div>

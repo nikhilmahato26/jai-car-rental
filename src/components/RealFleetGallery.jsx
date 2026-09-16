@@ -13,7 +13,8 @@ import {
   Car,
   MapPin,
   Maximize2,
-  Layers
+  Layers,
+  ArrowRight
 } from 'lucide-react';
 import { REAL_FLEET_VEHICLES, BUSINESS_INFO } from '../data/carData';
 
@@ -362,14 +363,23 @@ export default function RealFleetGallery() {
 
                 {/* Card Action Footer */}
                 <div className="unified-card-footer">
+                  <a
+                    href={`#/car/${vehicle.id}`}
+                    className="btn btn-secondary btn-sm view-details-action-btn"
+                    title={`View full specs and details for ${vehicle.name}`}
+                  >
+                    <span>View Details</span>
+                    <ArrowRight size={14} />
+                  </a>
+
                   <button 
                     type="button"
                     onClick={() => openLightbox(vehicle.id, currentSlideIdx)} 
                     className="btn btn-secondary btn-sm"
                     title="Enlarge photo"
                   >
-                    <Maximize2 size={15} />
-                    <span>View All {totalSlides} Photos</span>
+                    <Maximize2 size={14} />
+                    <span>Photos ({totalSlides})</span>
                   </button>
 
                   <a
@@ -379,8 +389,8 @@ export default function RealFleetGallery() {
                     className="btn btn-primary btn-sm"
                     style={{ flex: 1, justifyContent: 'center' }}
                   >
-                    <MessageCircle size={15} />
-                    <span>Book This Exact Car</span>
+                    <MessageCircle size={14} />
+                    <span>Book Exact Car</span>
                   </a>
                 </div>
               </div>

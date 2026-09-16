@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Key, CheckCircle, Phone, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Key, CheckCircle, Phone, MessageCircle, ChevronLeft, ChevronRight, ArrowRight, Camera } from 'lucide-react';
 import { BUSINESS_INFO, REAL_FLEET_VEHICLES } from '../data/carData';
 
 export default function SelfDriveSection() {
@@ -144,22 +144,31 @@ export default function SelfDriveSection() {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '0.85rem' }}>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <a
+                  href={`#/car/${swiftVehicle.id}`}
+                  className="btn btn-secondary"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <span>View Details</span>
+                  <ArrowRight size={16} />
+                </a>
                 <a
                   href={`https://wa.me/91${BUSINESS_INFO.whatsappNumber}?text=Hello%20JAI%20CAR%20RENTAL,%20I%20am%20interested%20in%20a%20self-drive%20car:%20Swift%20Automatic%20ZXi%20Petrol.%20Please%20share%20the%20available%20options.`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
-                  style={{ flex: 1 }}
+                  style={{ flex: 1.2, justifyContent: 'center' }}
                 >
-                  <MessageCircle size={18} />
-                  <span>BOOK SELF-DRIVE CAR</span>
+                  <MessageCircle size={16} />
+                  <span>Book Self-Drive</span>
                 </a>
                 <a
                   href={`tel:${BUSINESS_INFO.phonePrimary}`}
                   className="btn btn-secondary"
+                  title="Call now"
                 >
-                  <Phone size={18} />
+                  <Phone size={16} />
                 </a>
               </div>
             </div>
@@ -270,22 +279,31 @@ export default function SelfDriveSection() {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '0.85rem' }}>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <a
+                  href={`#/car/${fronxVehicle.id}`}
+                  className="btn btn-secondary"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <span>View Details</span>
+                  <ArrowRight size={16} />
+                </a>
                 <a
                   href={`https://wa.me/91${BUSINESS_INFO.whatsappNumber}?text=Hello%20JAI%20CAR%20RENTAL,%20I%20am%20interested%20in%20a%20self-drive%20car:%20Fronx%20CNG.%20Please%20share%20the%20available%20options.`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
-                  style={{ flex: 1 }}
+                  style={{ flex: 1.2, justifyContent: 'center' }}
                 >
-                  <MessageCircle size={18} />
-                  <span>BOOK SELF-DRIVE CAR</span>
+                  <MessageCircle size={16} />
+                  <span>Book Self-Drive</span>
                 </a>
                 <a
                   href={`tel:${BUSINESS_INFO.phonePrimary}`}
                   className="btn btn-secondary"
+                  title="Call now"
                 >
-                  <Phone size={18} />
+                  <Phone size={16} />
                 </a>
               </div>
             </div>
