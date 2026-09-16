@@ -1,0 +1,205 @@
+import React from 'react';
+import { Key, Shield, Sparkles, Fuel, Gauge, CheckCircle, Phone, ArrowRight, MessageCircle } from 'lucide-react';
+import { BUSINESS_INFO } from '../data/carData';
+
+export default function SelfDriveSection() {
+  const selfDriveFeatures = [
+    { label: 'Automatic & Manual Options', desc: 'Effortless city and highway driving' },
+    { label: 'Petrol & CNG Available', desc: 'Fuel efficient and cost-saving choices' },
+    { label: 'Spotless & Well-Maintained', desc: 'Full mechanical check before handover' },
+    { label: 'Flexible Rental Packages', desc: '12-Hour, 24-Hour, Daily to Monthly' },
+    { label: 'Fast & Easy Booking', desc: 'Minimal paperwork and quick KYC' },
+    { label: '24/7 Roadside Assistance', desc: 'Complete peace of mind on the road' }
+  ];
+
+  return (
+    <section id="self-drive" className="section self-drive-section">
+      <div className="container">
+        <div className="section-header">
+          <div className="badge-tag">
+            <Key size={15} />
+            <span>Freedom of the Open Road</span>
+          </div>
+          <h2 className="section-title">
+            Rent a Car. <span className="yellow-highlight">Explore More.</span>
+          </h2>
+          <p className="section-subtitle">
+            Drive with confidence and enjoy the freedom of your own journey with JAI CAR RENTAL. Experience total privacy, flexible schedules, and verified top-trim cars.
+          </p>
+        </div>
+
+        {/* Featured Self-Drive Cars Grid (Swift & Fronx) */}
+        <div className="self-drive-highlight-grid">
+          {/* Card 1: Swift Automatic ZXi Petrol */}
+          <div className="featured-car-card">
+            <div className="featured-car-img-box">
+              <img
+                src="/images/swift.jpg"
+                alt="Swift Automatic ZXi Petrol"
+                className="featured-car-img"
+              />
+              <span className="featured-tag">★ Featured Self-Drive</span>
+            </div>
+
+            <div className="featured-car-content">
+              <div className="featured-car-header">
+                <div>
+                  <h3 className="featured-car-name">Swift Automatic ZXi Petrol</h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                    Top-Trim Automatic Hatchback • Effortless City & Highway Drive
+                  </p>
+                </div>
+              </div>
+
+              {/* Verified Specs */}
+              <div className="spec-grid">
+                <div className="spec-item">
+                  <div className="spec-label">Transmission</div>
+                  <div className="spec-value">Automatic</div>
+                </div>
+                <div className="spec-item">
+                  <div className="spec-label">Fuel Type</div>
+                  <div className="spec-value">Petrol</div>
+                </div>
+                <div className="spec-item">
+                  <div className="spec-label">Trim / Variant</div>
+                  <div className="spec-value">ZXi Top Trim</div>
+                </div>
+              </div>
+
+              {/* Pricing Ready Card */}
+              <div className="pricing-preview-box">
+                <div className="pricing-badge-row">
+                  <span className="pricing-label">Rental Tariff</span>
+                  <span className="pricing-value">Price on Enquiry</span>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.6rem' }}>
+                  Customizable slots for all travel durations:
+                </p>
+                <div className="rental-periods-list">
+                  <span className="period-pill">12 Hours</span>
+                  <span className="period-pill">24 Hours</span>
+                  <span className="period-pill">Daily Rental</span>
+                  <span className="period-pill">Weekly</span>
+                  <span className="period-pill">Monthly</span>
+                  <span className="period-pill">Security Deposit Applicable</span>
+                  <span className="period-pill">Fair Fuel Policy</span>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.85rem' }}>
+                <a
+                  href={`https://wa.me/91${BUSINESS_INFO.whatsappNumber}?text=Hello%20JAI%20CAR%20RENTAL,%20I%20am%20interested%20in%20a%20self-drive%20car:%20Swift%20Automatic%20ZXi%20Petrol.%20Please%20share%20the%20available%20options.`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-primary"
+                  style={{ flex: 1 }}
+                >
+                  <MessageCircle size={18} />
+                  <span>BOOK SELF-DRIVE CAR</span>
+                </a>
+                <a
+                  href={`tel:${BUSINESS_INFO.phonePrimary}`}
+                  className="btn btn-secondary"
+                >
+                  <Phone size={18} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: Fronx CNG */}
+          <div className="featured-car-card">
+            <div className="featured-car-img-box">
+              <img
+                src="/images/fronx.jpg"
+                alt="Fronx CNG"
+                className="featured-car-img"
+              />
+              <span className="featured-tag">★ Featured Self-Drive</span>
+            </div>
+
+            <div className="featured-car-content">
+              <div className="featured-car-header">
+                <div>
+                  <h3 className="featured-car-name">Fronx CNG</h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                    Modern Coupe Crossover SUV • Superior Fuel Economy & Comfort
+                  </p>
+                </div>
+              </div>
+
+              {/* Verified Specs */}
+              <div className="spec-grid">
+                <div className="spec-item">
+                  <div className="spec-label">Transmission</div>
+                  <div className="spec-value">Manual</div>
+                </div>
+                <div className="spec-item">
+                  <div className="spec-label">Fuel Type</div>
+                  <div className="spec-value">CNG (Dual-Fuel)</div>
+                </div>
+                <div className="spec-item">
+                  <div className="spec-label">Style / Category</div>
+                  <div className="spec-value">Crossover SUV</div>
+                </div>
+              </div>
+
+              {/* Pricing Ready Card */}
+              <div className="pricing-preview-box">
+                <div className="pricing-badge-row">
+                  <span className="pricing-label">Rental Tariff</span>
+                  <span className="pricing-value">Price on Enquiry</span>
+                </div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.6rem' }}>
+                  Customizable slots for all travel durations:
+                </p>
+                <div className="rental-periods-list">
+                  <span className="period-pill">12 Hours</span>
+                  <span className="period-pill">24 Hours</span>
+                  <span className="period-pill">Daily Rental</span>
+                  <span className="period-pill">Weekly</span>
+                  <span className="period-pill">Monthly</span>
+                  <span className="period-pill">Security Deposit Applicable</span>
+                  <span className="period-pill">Fair Fuel Policy</span>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.85rem' }}>
+                <a
+                  href={`https://wa.me/91${BUSINESS_INFO.whatsappNumber}?text=Hello%20JAI%20CAR%20RENTAL,%20I%20am%20interested%20in%20a%20self-drive%20car:%20Fronx%20CNG.%20Please%20share%20the%20available%20options.`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-primary"
+                  style={{ flex: 1 }}
+                >
+                  <MessageCircle size={18} />
+                  <span>BOOK SELF-DRIVE CAR</span>
+                </a>
+                <a
+                  href={`tel:${BUSINESS_INFO.phonePrimary}`}
+                  className="btn btn-secondary"
+                >
+                  <Phone size={18} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Highlight Bullets */}
+        <div className="self-drive-features-row">
+          {selfDriveFeatures.map((feat, idx) => (
+            <div key={idx} className="sd-feature-card">
+              <CheckCircle size={22} className="yellow-highlight" style={{ flexShrink: 0 }} />
+              <div>
+                <p>{feat.label}</p>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{feat.desc}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
