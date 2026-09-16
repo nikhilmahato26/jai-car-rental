@@ -360,111 +360,145 @@ export const FAQS = [
   }
 ];
 
-export const REAL_FLEET_GALLERY = [
+export const REAL_FLEET_VEHICLES = [
   {
-    id: "real-swift-front",
-    title: "Maruti Suzuki Swift Automatic",
-    model: "Swift ZXi AMT Petrol",
-    registration: "MH14 MF 8712",
+    id: "swift-automatic-mh14",
     category: "swift",
-    categoryLabel: "Maruti Swift",
-    fuel: "Petrol",
-    transmission: "Automatic",
-    image: "/images/real-cars/swift-front.jpg",
-    alt: "Actual Maruti Suzuki Swift Automatic front angle at JAI CAR RENTAL Wagholi Pune",
-    caption: "Front 3/4 Profile • Sparkling Pearl White finish with crystal projector headlamps & bold black grille",
-    tags: ["Automatic", "Push-Start", "Alloy Wheels", "AC Chilled"],
-    badge: "Actual Car Photo"
-  },
-  {
-    id: "real-swift-rear-sky",
-    title: "Maruti Suzuki Swift Automatic",
-    model: "Swift ZXi AMT Petrol",
+    name: "Maruti Suzuki Swift Automatic",
+    model: "Swift ZXi AMT (Petrol)",
     registration: "MH14 MF 8712",
-    category: "swift",
-    categoryLabel: "Maruti Swift",
-    fuel: "Petrol",
-    transmission: "Automatic",
-    image: "/images/real-cars/swift-rear-sky.jpg",
-    alt: "Real Maruti Swift rear dynamic view under Pune skies",
-    caption: "Rear 3/4 Dynamic Angle • Clean sporty spoiler, precision diamond-cut alloys & tinted glass",
-    tags: ["Rear Wiper", "Defogger", "High Mileage", "Smooth Ride"],
-    badge: "Actual Car Photo"
+    badge: "100% Genuine Ground Fleet",
+    typeBadge: "Self-Drive & Chauffeur",
+    fuel: "Petrol (High Efficiency)",
+    transmission: "AMT Automatic",
+    seats: "5 Seater",
+    description: "Our top-trim Swift Automatic offers effortless driving in city traffic or long scenic drives. Spotless Pearl White body with diamond-cut alloys and push-button start.",
+    slides: [
+      {
+        id: "swift-front",
+        label: "Front View",
+        title: "Front 3/4 Profile",
+        image: "/images/real-cars/swift-front.jpg",
+        alt: "Maruti Suzuki Swift Automatic front angle MH14 MF 8712",
+        caption: "Front 3/4 Profile • Sparkling Pearl White finish with crystal projector headlamps & bold black grille",
+        tag: "Front 3/4 View"
+      },
+      {
+        id: "swift-side-wide",
+        label: "Side & Stance",
+        title: "Wagholi Yard Full Stance",
+        image: "/images/real-cars/swift-front-wide.jpg",
+        alt: "Maruti Suzuki Swift yard view at Wagholi Pune hub",
+        caption: "Yard Stance & Side Angle • Clean body lines, calibrated tyre pressure, fully washed and ready for handover",
+        tag: "Side & Stance"
+      },
+      {
+        id: "swift-rear-sky",
+        label: "Rear Angle",
+        title: "Rear 3/4 Dynamic Angle",
+        image: "/images/real-cars/swift-rear-sky.jpg",
+        alt: "Maruti Suzuki Swift rear dynamic angle MH14 MF 8712",
+        caption: "Rear 3/4 Dynamic Angle • Clean sporty spoiler, precision diamond-cut alloys & tinted privacy glass",
+        tag: "Rear 3/4 View"
+      },
+      {
+        id: "swift-rear",
+        label: "Boot Space",
+        title: "Rear Boot & Sensors",
+        image: "/images/real-cars/swift-rear.jpg",
+        alt: "Maruti Suzuki Swift rear tailgate and boot",
+        caption: "Rear Tailgate & Boot • Clean tail lamps, reverse parking sensors and generous luggage compartment",
+        tag: "Rear & Boot"
+      },
+      {
+        id: "swift-interior",
+        label: "Interior Cabin",
+        title: "Touchscreen & Interior",
+        image: "/images/real-cars/interior-dashboard.jpg",
+        alt: "Maruti Suzuki Swift cockpit and touchscreen display",
+        caption: "Cabin View • SmartPlay touchscreen infotainment, leatherette steering controls & deep-sanitized upholstery",
+        tag: "Cockpit & Cabin"
+      }
+    ],
+    features: [
+      "Automatic AMT (Effortless Drive)",
+      "Push Button Start / Stop",
+      "SmartPlay Touchscreen",
+      "Chilled Automatic Climate AC",
+      "Reverse Parking Sensors",
+      "Verified Pune RTO MH-14"
+    ]
   },
   {
-    id: "real-interior-dashboard",
-    title: "Cockpit & Touchscreen Interior",
-    model: "Spotless Sanitized Cabin",
-    registration: "Verified Cabin",
-    category: "interior",
-    categoryLabel: "Cabin & Interior",
-    fuel: "Dual Airbags",
-    transmission: "Audio Controls",
-    image: "/images/real-cars/interior-dashboard.jpg",
-    alt: "Real cockpit interior dashboard view of JAI CAR RENTAL vehicle",
-    caption: "Cabin View • SmartPlay touchscreen infotainment, dual-tone leatherette steering & deep-sanitized upholstery",
-    tags: ["Touchscreen Display", "Bluetooth Audio", "Push Button Start", "100% Sanitized"],
-    badge: "Verified Interior"
-  },
-  {
-    id: "real-fronx-front",
-    title: "Maruti Suzuki Fronx",
-    model: "Fronx Crossover / SUV",
-    registration: "MH12 XQ 6698",
+    id: "fronx-cng-mh12",
     category: "fronx",
-    categoryLabel: "Maruti Fronx",
-    fuel: "CNG / Petrol",
-    transmission: "Manual",
-    image: "/images/real-cars/fronx-front.jpg",
-    alt: "Real Maruti Suzuki Fronx front fascia at JAI CAR RENTAL yard Wagholi",
-    caption: "Front Fascia • Bold NEXA geometric grille, split LED DRLs & muscular SUV road stance",
-    tags: ["CNG Eco Fuel", "High Clearance", "Dual Airbags", "5-Seater"],
-    badge: "Actual Car Photo"
-  },
-  {
-    id: "real-fronx-side",
-    title: "Maruti Suzuki Fronx",
-    model: "Fronx Crossover / SUV",
+    name: "Maruti Suzuki Fronx SUV",
+    model: "Fronx Crossover / Coupe SUV (CNG)",
     registration: "MH12 XQ 6698",
-    category: "fronx",
-    categoryLabel: "Maruti Fronx",
-    fuel: "CNG / Petrol",
-    transmission: "Manual",
-    image: "/images/real-cars/fronx-side.jpg",
-    alt: "Real Maruti Suzuki Fronx full side profile and ground clearance",
-    caption: "Side Profile • High ground clearance, wheel arch protective cladding & aerodynamic coupe roofline",
-    tags: ["Roof Rails", "Highway Stance", "Huge Boot", "Great Mileage"],
-    badge: "Actual Car Photo"
-  },
-  {
-    id: "real-swift-front-wide",
-    title: "Maruti Suzuki Swift Automatic",
-    model: "Swift ZXi AMT Petrol",
-    registration: "MH14 MF 8712",
-    category: "swift",
-    categoryLabel: "Maruti Swift",
-    fuel: "Petrol",
-    transmission: "Automatic",
-    image: "/images/real-cars/swift-front-wide.jpg",
-    alt: "Real Maruti Suzuki Swift parked at JAI CAR RENTAL Wagholi yard",
-    caption: "Wagholi Yard View • Fully serviced, washed, tyre pressure verified and ready for instant key handover",
-    tags: ["Instant Handover", "Low Deposit", "Doorstep Delivery", "Verified Docs"],
-    badge: "Actual Car Photo"
-  },
-  {
-    id: "real-swift-rear",
-    title: "Maruti Suzuki Swift Automatic",
-    model: "Swift ZXi AMT Petrol",
-    registration: "MH14 MF 8712",
-    category: "swift",
-    categoryLabel: "Maruti Swift",
-    fuel: "Petrol",
-    transmission: "Automatic",
-    image: "/images/real-cars/swift-rear.jpg",
-    alt: "Real Maruti Swift rear profile view at JAI CAR RENTAL",
-    caption: "Rear Quarter Angle • Clean tail lamp clusters, immaculate paintwork and generous luggage boot",
-    tags: ["Spacious Boot", "Reverse Sensors", "Spotless Condition", "Keyless Entry"],
-    badge: "Actual Car Photo"
+    badge: "100% Genuine Ground Fleet",
+    typeBadge: "Self-Drive & Chauffeur",
+    fuel: "CNG + Petrol (Dual Fuel)",
+    transmission: "5-Speed Manual",
+    seats: "5 Seater",
+    description: "The modern coupe crossover SUV with commanding road stance, unmatched fuel economy on CNG, high ground clearance, and sleek split LED DRLs.",
+    slides: [
+      {
+        id: "fronx-front",
+        label: "Front Fascia",
+        title: "Bold Front NEXA Fascia",
+        image: "/images/real-cars/fronx-front.jpg",
+        alt: "Maruti Suzuki Fronx front fascia MH12 XQ 6698",
+        caption: "Front Fascia • Bold NEXA geometric wave grille, split LED DRLs & muscular SUV road stance",
+        tag: "Front View"
+      },
+      {
+        id: "fronx-side",
+        label: "Side Profile",
+        title: "Side Profile & Ground Clearance",
+        image: "/images/real-cars/fronx-side.jpg",
+        alt: "Maruti Suzuki Fronx full side profile and wheel arches",
+        caption: "Side Profile • High ground clearance, wheel arch protective cladding & aerodynamic coupe roofline",
+        tag: "Side Profile"
+      },
+      {
+        id: "fronx-interior",
+        label: "Interior Cabin",
+        title: "Modern Cockpit & Dashboard",
+        image: "/images/real-cars/interior-dashboard.jpg",
+        alt: "Maruti Fronx modern cockpit dashboard and infotainment",
+        caption: "Cabin View • Deep-sanitized 5-seater cabin, high-visibility commanding driving position & Bluetooth audio",
+        tag: "Cockpit & Cabin"
+      }
+    ],
+    features: [
+      "Dual-Fuel Factory CNG",
+      "High SUV Ground Clearance",
+      "Aerodynamic Coupe Styling",
+      "Split LED Daytime Lights",
+      "Generous Legroom & Headroom",
+      "Verified Pune RTO MH-12"
+    ]
   }
 ];
+
+// Flat array for backward compatibility
+export const REAL_FLEET_GALLERY = REAL_FLEET_VEHICLES.flatMap(vehicle => 
+  vehicle.slides.map(slide => ({
+    id: slide.id,
+    vehicleId: vehicle.id,
+    title: vehicle.name,
+    model: vehicle.model,
+    registration: vehicle.registration,
+    category: vehicle.category,
+    categoryLabel: vehicle.name,
+    fuel: vehicle.fuel,
+    transmission: vehicle.transmission,
+    image: slide.image,
+    alt: slide.alt,
+    caption: slide.caption,
+    tags: [slide.tag, ...vehicle.features.slice(0, 3)],
+    badge: "Actual Car Photo"
+  }))
+);
+
 

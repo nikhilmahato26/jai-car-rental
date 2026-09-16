@@ -1,7 +1,17 @@
-import { Key, Shield, Sparkles, Fuel, Gauge, CheckCircle, Phone, ArrowRight, MessageCircle, Camera } from 'lucide-react';
-import { BUSINESS_INFO } from '../data/carData';
+import React, { useState } from 'react';
+import { Key, CheckCircle, Phone, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { BUSINESS_INFO, REAL_FLEET_VEHICLES } from '../data/carData';
 
 export default function SelfDriveSection() {
+  const [swiftSlideIdx, setSwiftSlideIdx] = useState(0);
+  const [fronxSlideIdx, setFronxSlideIdx] = useState(0);
+
+  const swiftVehicle = REAL_FLEET_VEHICLES.find(v => v.id === 'swift-automatic-mh14') || REAL_FLEET_VEHICLES[0];
+  const fronxVehicle = REAL_FLEET_VEHICLES.find(v => v.id === 'fronx-cng-mh12') || REAL_FLEET_VEHICLES[1];
+
+  const currentSwiftSlide = swiftVehicle.slides[swiftSlideIdx] || swiftVehicle.slides[0];
+  const currentFronxSlide = fronxVehicle.slides[fronxSlideIdx] || fronxVehicle.slides[0];
+
   const selfDriveFeatures = [
     { label: 'Automatic & Manual Options', desc: 'Effortless city and highway driving' },
     { label: 'Petrol & CNG Available', desc: 'Fuel efficient and cost-saving choices' },
@@ -33,11 +43,59 @@ export default function SelfDriveSection() {
           <div className="featured-car-card">
             <div className="featured-car-img-box">
               <img
-                src="/images/real-cars/swift-front.jpg"
-                alt="Swift Automatic ZXi Petrol MH14 MF 8712"
+                key={currentSwiftSlide.id}
+                src={currentSwiftSlide.image}
+                alt={currentSwiftSlide.alt}
                 className="featured-car-img"
               />
               <span className="featured-tag">★ Actual Car • MH14 MF 8712</span>
+              
+              {/* Slider Angle Tag */}
+              <span className="featured-angle-tag">{currentSwiftSlide.tag}</span>
+
+              {/* Slider Controls */}
+              <button
+                type="button"
+                className="card-slider-nav-btn prev"
+                onClick={() => setSwiftSlideIdx((prev) => (prev > 0 ? prev - 1 : swiftVehicle.slides.length - 1))}
+                aria-label="Previous photo angle"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                type="button"
+                className="card-slider-nav-btn next"
+                onClick={() => setSwiftSlideIdx((prev) => (prev < swiftVehicle.slides.length - 1 ? prev + 1 : 0))}
+                aria-label="Next photo angle"
+              >
+                <ChevronRight size={20} />
+              </button>
+
+              <div className="card-slider-dots">
+                {swiftVehicle.slides.map((s, idx) => (
+                  <button
+                    key={s.id}
+                    type="button"
+                    className={`card-slider-dot ${idx === swiftSlideIdx ? 'active' : ''}`}
+                    onClick={() => setSwiftSlideIdx(idx)}
+                    aria-label={s.label}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Angle Switcher Tabs */}
+            <div className="card-quick-angle-tabs">
+              {swiftVehicle.slides.map((s, idx) => (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setSwiftSlideIdx(idx)}
+                  className={`quick-angle-tab-btn ${idx === swiftSlideIdx ? 'active' : ''}`}
+                >
+                  {s.label}
+                </button>
+              ))}
             </div>
 
             <div className="featured-car-content">
@@ -111,11 +169,59 @@ export default function SelfDriveSection() {
           <div className="featured-car-card">
             <div className="featured-car-img-box">
               <img
-                src="/images/real-cars/fronx-front.jpg"
-                alt="Fronx CNG MH12 XQ 6698"
+                key={currentFronxSlide.id}
+                src={currentFronxSlide.image}
+                alt={currentFronxSlide.alt}
                 className="featured-car-img"
               />
               <span className="featured-tag">★ Actual Car • MH12 XQ 6698</span>
+
+              {/* Slider Angle Tag */}
+              <span className="featured-angle-tag">{currentFronxSlide.tag}</span>
+
+              {/* Slider Controls */}
+              <button
+                type="button"
+                className="card-slider-nav-btn prev"
+                onClick={() => setFronxSlideIdx((prev) => (prev > 0 ? prev - 1 : fronxVehicle.slides.length - 1))}
+                aria-label="Previous photo angle"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                type="button"
+                className="card-slider-nav-btn next"
+                onClick={() => setFronxSlideIdx((prev) => (prev < fronxVehicle.slides.length - 1 ? prev + 1 : 0))}
+                aria-label="Next photo angle"
+              >
+                <ChevronRight size={20} />
+              </button>
+
+              <div className="card-slider-dots">
+                {fronxVehicle.slides.map((s, idx) => (
+                  <button
+                    key={s.id}
+                    type="button"
+                    className={`card-slider-dot ${idx === fronxSlideIdx ? 'active' : ''}`}
+                    onClick={() => setFronxSlideIdx(idx)}
+                    aria-label={s.label}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Angle Switcher Tabs */}
+            <div className="card-quick-angle-tabs">
+              {fronxVehicle.slides.map((s, idx) => (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setFronxSlideIdx(idx)}
+                  className={`quick-angle-tab-btn ${idx === fronxSlideIdx ? 'active' : ''}`}
+                >
+                  {s.label}
+                </button>
+              ))}
             </div>
 
             <div className="featured-car-content">
