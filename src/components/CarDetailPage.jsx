@@ -531,7 +531,7 @@ Please share rates and confirm vehicle availability.`;
                     <ShieldCheck size={16} style={{ color: 'var(--yellow-bright)', flexShrink: 0 }} />
                     <div>
                       <strong>Manager Direct Support</strong>
-                      <span>Jai Prakash Singh: 7722006000 / 9021312200</span>
+                      <span>Jai Prakash Singh: {BUSINESS_INFO.phonePrimary} / {BUSINESS_INFO.phoneSecondary}</span>
                     </div>
                   </div>
                 </div>

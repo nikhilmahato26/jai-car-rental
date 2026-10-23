@@ -3,7 +3,7 @@ export const BUSINESS_INFO = {
   owner: "JAI PRAKASH SINGH",
   title: "Owner / Manager",
   phonePrimary: "7722006000",
-  phoneSecondary: "9021312200",
+  phoneSecondary: "9270191010",
   whatsappNumber: "7722006000",
   address: "Wagholi Green, Phase 2, Jagtap Wasti – Wagholi, Pune – 412207",
   businessType: "Car Rental & Self-Drive Car Rental Service",
